@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class=QA-title style="
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+">NHỮNG CÂU HỎI THƯỜNG GẶP</h1>
+  <section class="content" style="margin: 10px 50px 20px 50px">
+    <div class="row">
+        <div class="col-12" id="accordion">
+            <div class="card card-primary card-outline" style="border-top-color:#007bff; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            1. Tính chiều dài của sông serapok
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song SeRePok'<br>
+                      group by name
+                      <br><code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-primary card-outline" style="border-top-color:#007bff; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseTwo">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            2. Tính chiều dài của sông Song Ea Hleo
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song Ea Hleo'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-primary card-outline" style="border-top-color:#007bff; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseThree">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            3. Tính chiều dài của sông Song Krong HNang 
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song Krong HNang'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-warning card-outline" style="border-top-color:#28a745; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseFour">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            4. Tính chiều dài của sông Song Hinh 
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song Hinh'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-warning card-outline" style="border-top-color:#28a745; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseFive">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            5. Tính chiều dài của sông Song Krong Kno
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song Krong Kno'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-warning card-outline" style="border-top-color:#28a745; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseSix">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            6. Tính chiều dài của sông Song Krong Ana
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song Krong Ana'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-danger card-outline" style="border-top-color:#ffc107; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseSeven">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            7. Tính chiều dài của sông Song Ea Krong Pach 
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song Ea Krong Pach'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-danger card-outline" style="border-top-color:#ffc107; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseEight">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            8. Tính chiều dài của sông Song Krong Bong
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseEight" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='Song Krong Bong'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-danger card-outline" style="border-top-color:#ffc107; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseNine">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            9.  Tính chiều dài của những dòng sông VÔ DANH
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseNine" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      select name, SUM(geom.STLength()) as 'SumLengthRiver'<br>
+                      from River<br>
+                      where name='null'<br>
+                      group by name<br>
+                      <code>Kết quả: </code>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-danger card-outline" style="border-top-color:#6610f2; border-width: medium; margin-bottom: 10px">
+              <a class="d-block w-100" data-toggle="collapse" href="#collapseTen">
+                  <div class="card-header">
+                      <h4 class="card-title w-100">
+                          10.  kiểm tra sông của các huyện
+                      </h4>
+                  </div>
+              </a>
+              <div id="collapseTen" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    CREATE FUNCTION fun_check_inside_River_of_Huyen(@type character(20))
+                    RETURNS TABLE AS RETURN (<br>
+                      SELECT id_poly, River.name, CASE Huyen.geom.STIntersects(River.geom) 
+                                          WHEN 1 THEN 'INSIDE' 
+                                          WHEN 0 THEN 'NOT INSIDE' 
+                                          END AS 'Checked'<br>
+                      FROM River, Huyen<br>
+                      WHERE Huyen.name = @type
+                    )
+                    <hr>
+                    SELECT * FROM fun_check_inside_River_of_Huyen('Buon Ho')<hr>
+                    SELECT * FROM fun_check_inside_River_of_Huyen('Krong Buk')
+                    <code>Kết quả: </code>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-danger card-outline" style="border-top-color:#6610f2; border-width: medium; margin-bottom: 10px">
+              <a class="d-block w-100" data-toggle="collapse" href="#collapseEleven">
+                  <div class="card-header">
+                      <h4 class="card-title w-100">
+                          11.  Những huyện nào có Hồ
+                      </h4>
+                  </div>
+              </a>
+              <div id="collapseEleven" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    CREATE FUNCTION fun_check_inside_Lake_of_Huyen(@type character(20))
+                    RETURNS TABLE AS RETURN (<br>
+                      SELECT id_poly, Lake.name, CASE Huyen.geom.STIntersects(Lake.geom) <br>
+                                          WHEN 1 THEN 'INSIDE'
+                                          WHEN 0 THEN 'NOT INSIDE'
+                                          END AS 'Checked'
+                      FROM Lake, Huyen<br>
+                      WHERE Huyen.name = @type<br>
+                    )
+                    <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('EaSup') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('EaHleo')<hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Don') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Cu Mgar') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Buk') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Ho') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Nang') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Ma Thuoc') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong A Na') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Cu Kuin') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Pac') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Ea Kar') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Lak') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Bong') <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('MDrak') <hr>
+                    <code>Kết quả: </code>
+                  </div>
+              </div>
+            </div>
+            <div class="card card-danger card-outline " style="border-top-color:#6610f2; border-width: medium; margin-bottom: 10px">
+                <a class="d-block w-100" data-toggle="collapse" href="#collapseTwice">
+                    <div class="card-header">
+                        <h4 class="card-title w-100">
+                            12. Huyện nào có nhiều con sông qua nhất
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseTwice" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      SELECT COUNT(checked) as 'number River of EaSup'
+                      FROM fun_check_inside_River_of_Huyen('EaSup') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 19 </code>
+                    <hr>
+                      SELECT COUNT(checked) as 'number River of EaHleo'
+                      FROM fun_check_inside_River_of_Huyen('EaHleo') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 14 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Buon Don'
+                      FROM fun_check_inside_River_of_Huyen('Buon Don') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 23 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Cu Mgar' 
+                      FROM fun_check_inside_River_of_Huyen('Cu Mgar') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 9 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Krong Nang' 
+                      FROM fun_check_inside_River_of_Huyen('Krong Nang') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 1 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Buon Ma Thuoc' 
+                      FROM fun_check_inside_River_of_Huyen('Buon Ma Thuoc') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 11 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Krong A Na' 
+                      FROM fun_check_inside_River_of_Huyen('Krong A Na') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 12 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Cu Kuin' 
+                      FROM fun_check_inside_River_of_Huyen('Cu Kuin') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 4 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Krong Pac'
+                      FROM fun_check_inside_River_of_Huyen('Krong Pac') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 8 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Ea Kar'
+                      FROM fun_check_inside_River_of_Huyen('Ea Kar') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 19 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Lak' 
+                      FROM fun_check_inside_River_of_Huyen('Lak') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 20 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of Krong Bong' 
+                      FROM fun_check_inside_River_of_Huyen('Krong Bong') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 26 </code>
+                      <hr>
+                      SELECT COUNT(checked) as 'number River of MDrak' 
+                      FROM fun_check_inside_River_of_Huyen('MDrak') 
+                      WHERE checked = 'INSIDE'
+                      <br>
+                      <code>Kết quả: 36</code>
+                    <hr>
+                    <p class="font-weight-bold">Huyện có nhiều sông nhất là 'MDrak'</p>
+                    <p class="font-weight-bold">Huyện có ít sông chảy qua nhất là: 'Krong Nang'</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-3 text-center">
+            <p class="lead">
+                <a href="contact-us.html">Contact us</a>,
+                if you found not the right anwser or you have a other question?<br />
+            </p>
+        </div>
+    </div>
+  </section>
+  
+</body>
+</html>
