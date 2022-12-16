@@ -3,15 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QA</title>
+  <title>FAQ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <h1 class=QA-title style="
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 600;
-">NHỮNG CÂU HỎI THƯỜNG GẶP</h1>
   <section class="content" style="margin: 10px 50px 20px 50px">
     <div class="row">
         <div class="col-12" id="accordion">
@@ -29,7 +24,7 @@
                       from River<br>
                       where name='Song SeRePok'<br>
                       group by name
-                      <br><code>Kết quả: </code>
+                      <br><code>Kết quả: 0.988032338990877</code>
                     </div>
                 </div>
             </div>
@@ -47,7 +42,7 @@
                       from River<br>
                       where name='Song Ea Hleo'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 1.05059213719414</code>
                     </div>
                 </div>
             </div>
@@ -65,7 +60,7 @@
                       from River<br>
                       where name='Song Krong HNang'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 0.72182569692932</code>
                     </div>
                 </div>
             </div>
@@ -83,7 +78,7 @@
                       from River<br>
                       where name='Song Hinh'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 0.144364567281609</code>
                     </div>
                 </div>
             </div>
@@ -101,7 +96,7 @@
                       from River<br>
                       where name='Song Krong Kno'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 0.404592617242956</code>
                     </div>
                 </div>
             </div>
@@ -119,7 +114,7 @@
                       from River<br>
                       where name='Song Krong Ana'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 0.985548054381187</code>
                     </div>
                 </div>
             </div>
@@ -137,7 +132,7 @@
                       from River<br>
                       where name='Song Ea Krong Pach'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 0.363761613244687</code>
                     </div>
                 </div>
             </div>
@@ -155,7 +150,7 @@
                       from River<br>
                       where name='Song Krong Bong'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 0.410032869070513</code>
                     </div>
                 </div>
             </div>
@@ -173,7 +168,7 @@
                       from River<br>
                       where name='null'<br>
                       group by name<br>
-                      <code>Kết quả: </code>
+                      <code>Kết quả: 5.86599459679251</code>
                     </div>
                 </div>
             </div>
@@ -181,7 +176,7 @@
               <a class="d-block w-100" data-toggle="collapse" href="#collapseTen">
                   <div class="card-header">
                       <h4 class="card-title w-100">
-                          10.  kiểm tra sông của các huyện
+                          10.  Kiểm tra sông của các huyện
                       </h4>
                   </div>
               </a>
@@ -196,10 +191,10 @@
                       FROM River, Huyen<br>
                       WHERE Huyen.name = @type
                     )
+                    <br>
+                    (nếu chỉ toàn là 'NOT INSIDE => huyện đó không có sông)
                     <hr>
-                    SELECT * FROM fun_check_inside_River_of_Huyen('Buon Ho')<hr>
-                    SELECT * FROM fun_check_inside_River_of_Huyen('Krong Buk')
-                    <code>Kết quả: </code>
+                    <code>Kết quả: Huyện <strong>Krong Buk </strong>và <strong>Buon Ho</strong></code>
                   </div>
                 </div>
             </div>
@@ -223,22 +218,22 @@
                       WHERE Huyen.name = @type<br>
                     )
                     <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('EaSup') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('EaHleo')<hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Don') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Cu Mgar') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Buk') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Ho') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Nang') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Ma Thuoc') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong A Na') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Cu Kuin') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Pac') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Ea Kar') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Lak') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Bong') <hr>
-                    SELECT * FROM fun_check_inside_Lake_of_Huyen('MDrak') <hr>
-                    <code>Kết quả: </code>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('EaSup') <i style="color:DodgerBlue;">NOT INSIDE</i> <hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('EaHleo') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Don') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Cu Mgar') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Buk') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Ho') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Nang') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Buon Ma Thuoc') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong A Na') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Cu Kuin') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Pac') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Ea Kar') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Lak') <i style="color:DodgerBlue;">INSIDE ('Ho Lak, Ho Ea RBin, Ho EaTyn, Ho CuPam')</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('Krong Bong') <i style="color:DodgerBlue;">INSIDE ('Ho Cu Pam)</i><hr>
+                    SELECT * FROM fun_check_inside_Lake_of_Huyen('MDrak') <i style="color:DodgerBlue;">NOT INSIDE</i><hr>
+                    <code>Kết quả: Huyện <strong>Lak </strong>và <strong>Krong Bong</strong></code>
                   </div>
               </div>
             </div>
@@ -330,22 +325,24 @@
                       <br>
                       <code>Kết quả: 36</code>
                     <hr>
-                    <p class="font-weight-bold">Huyện có nhiều sông nhất là 'MDrak'</p>
-                    <p class="font-weight-bold">Huyện có ít sông chảy qua nhất là: 'Krong Nang'</p>
+                    <p class="font-weight-bold" style="color:DodgerBlue;">Huyện có nhiều sông nhất là 'MDrak'</p>
+                    <p class="font-weight-bold" style="color:DodgerBlue;">Huyện có ít sông chảy qua nhất là: 'Krong Nang'</p>
                 </div>
             </div>
-          </div>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="col-12 mt-3 text-center">
             <p class="lead">
-                <a href="contact-us.html">Contact us</a>,
+                <a href="diachiemail@gmail.com">Contact us</a>,
                 if you found not the right anwser or you have a other question?<br />
             </p>
         </div>
     </div>
   </section>
-  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
