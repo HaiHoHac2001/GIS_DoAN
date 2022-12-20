@@ -11,9 +11,9 @@
   position:relative;
 }
 #table-scroll {
-  height:550px;
+  height:500px;
   overflow:auto;  
-  margin-top:calc(var(--header-height) + var(--nav-height));
+  margin-top: 4vw;
 }
 #table-wrapper table {
   width:100%;
@@ -39,7 +39,7 @@
 }
 
 
-    tr.buonho {
+tr.buonho {
   background-color: #bd85cd;
 }
 
@@ -94,11 +94,11 @@ tr.kuin {
   background-color: #baee65;
 }
 
-    tr.BMT {
+tr.BMT {
     background-color: #d3fdf0;
 }
 
-    table#footable_17396 {
+table#footable_17396 {
     width: 100%;
     background: #fff;
     margin: 1em 0;
@@ -118,30 +118,22 @@ tr.footable-header {
   color: rgba(0,0,0,.87);
   border-collapse: separate;
   border-spacing: 0;
-  font-size: 20px;
   font-weight: 600;
 }
+
 tr {
-    height: 40px;
+    font-size: 1.1vw;
 }
+
 .home__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.home__table {
-    /* width: 60%; */
-}
+
 .table-striped tbody tr:nth-of-type(odd){
   background-color: transparent;
-}
-.home__img {
-  width: 40%;
-  position: fixed;
-  top: 0;
-  right: 67px;
-  scale: 0.5;
 }
 
 img.logo__img {
@@ -155,7 +147,6 @@ img.logo__img {
   font-size: 28px;
   /* font-weight: 600; */
   padding: 24px 12px;
-  margin-top: calc(var(--header-height) + var(--nav-height));
 }
 caption {
     font-size: 29px;
@@ -172,1520 +163,1524 @@ a.btn.btn-primary.btn-lg.active {
     background: red;
     width: 50px;
 }
+.body{
+  margin: 0px 20px 0px 20px;
+}
   </style>
 </head>
 <body>
-  <div class="home__table--desc">
-    Tỉnh Đắk Lắk có
-    <span  style="color: red;">15 đơn vị hành chính </span>cấp huyện, bao gồm  1 thành phố, 1 thị xã và 13 huyện,<span  style="color: red;"> với 184 đơn vị hành chính cấp xã</span> , bao gồm 20 phường, 12 thị trấn và 152 xã.
-  </div>
-  <div class="home__container" id="table-wrapper">
-    <div id="table-scroll" class="home__table ">
-      
-  <table data-ninja_table_instance="ninja_table_instance_0" data-footable_id="17396" data-filter-delay="1000"
-  id="footable_17396" data-unique_identifier="ninja_table_unique_id_1903736994_17396"
-  class="table-striped foo-table ninja_footable foo_table_17396 ninja_table_unique_id_1903736994_17396 ui table  nt_type_legacy_table selectable celled striped vertical_centered  footable-paging-right ninja_table_pro ninja_table_afd_inline ninja_table_has_custom_filter">
-  <h1 class="home__title">Danh sách các đơn vị hành chính trực thuộc tỉnh Đắk Lắk</h1>
-  <!-- <colgroup>
-    <col class="ninja_column_0 ">
-    <col class="ninja_column_1 ">
-    <col class="ninja_column_2 ">
-    <col class="ninja_column_3 ">
-    <col class="ninja_column_4 ">
-    <col class="ninja_column_5 ">
-  </colgroup> -->
-  <thead>
-    <tr class="footable-header">
-      <th class="text" scope="col" >STT</th>
-      <th class="text" scope="col">Quận Huyện</th>
-      <th class="text" scope="col">Mã QH</th>
-      <th class="text" scope="col">Phường Xã</th>
-      <th class="text" scope="col">Mã PX</th>
-      <th class="text" scope="col">Cấp</th>
-    </tr>
-  </thead>
-  <tbody>
+  <div class="container-fluid">
+    <div class="home__table--desc h1" style="font-size: 2vw;">
+      Tỉnh Đắk Lắk có
+      <span  style="color: red;">15 đơn vị hành chính </span>cấp huyện, bao gồm  1 thành phố, 1 thị xã và 13 huyện,<span  style="color: red;"> với 184 đơn vị hành chính cấp xã</span> , bao gồm 20 phường, 12 thị trấn và 152 xã.
+    </div>
+    <div class="home__container" id="table-wrapper">
+      <div class="row">
+        <div id="table-scroll" class="home__table col-8">
+          <table data-ninja_table_instance="ninja_table_instance_0" data-footable_id="17396" data-filter-delay="1000"
+          id="footable_17396" data-unique_identifier="ninja_table_unique_id_1903736994_17396"
+          class="table-striped foo-table ninja_footable foo_table_17396 ninja_table_unique_id_1903736994_17396 ui table  nt_type_legacy_table selectable celled striped vertical_centered  footable-paging-right ninja_table_pro ninja_table_afd_inline ninja_table_has_custom_filter table-hover">
+          <h1 class="home__title" style="font-size: 1.8vw;">Danh sách các đơn vị hành chính trực thuộc tỉnh Đắk Lắk</h1>
+          <!-- <colgroup>
+            <col class="ninja_column_0 ">
+            <col class="ninja_column_1 ">
+            <col class="ninja_column_2 ">
+            <col class="ninja_column_3 ">
+            <col class="ninja_column_4 ">
+            <col class="ninja_column_5 ">
+          </colgroup> -->
+          <thead>
+            <tr class="footable-header table">
+              <th class="text" scope="col" style="font-size: 1.7vw;">STT</th>
+              <th class="text" scope="col" style="font-size: 1.7vw;">Quận Huyện</th>
+              <th class="text" scope="col" style="font-size: 1.7vw;">Mã QH</th>
+              <th class="text" scope="col" style="font-size: 1.7vw;">Phường Xã</th>
+              <th class="text" scope="col" style="font-size: 1.7vw;">Mã PX</th>
+              <th class="text" scope="col" style="font-size: 1.7vw;">Cấp</th>
+            </tr>
+          </thead>
+          <tbody>
 
-    <tr data-row_id="46220" class="BMT ninja_table_row_0 nt_row_id_46220">
-      <td>1</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Tân Lập</td>
-      <td>24118</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46221" class="BMT ninja_table_row_1 nt_row_id_46221">
-      <td>2</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Tân Hòa</td>
-      <td>24121</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46222" class="BMT ninja_table_row_2 nt_row_id_46222">
-      <td>3</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Tân An</td>
-      <td>24124</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46223" class="BMT ninja_table_row_3 nt_row_id_46223">
-      <td>4</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Thống Nhất</td>
-      <td>24127</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46224" class="BMT ninja_table_row_4 nt_row_id_46224">
-      <td>5</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Thành Nhất</td>
-      <td>24130</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46225" class="BMT ninja_table_row_5 nt_row_id_46225">
-      <td>6</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Thắng Lợi</td>
-      <td>24133</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46226" class="BMT ninja_table_row_6 nt_row_id_46226">
-      <td>7</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Tân Lợi</td>
-      <td>24136</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46227" class="BMT ninja_table_row_7 nt_row_id_46227">
-      <td>8</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Thành Công</td>
-      <td>24139</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46228" class="BMT ninja_table_row_8 nt_row_id_46228">
-      <td>9</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Tân Thành</td>
-      <td>24142</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46229" class="BMT ninja_table_row_9 nt_row_id_46229">
-      <td>10</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Tân Tiến</td>
-      <td>24145</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46230" class="BMT ninja_table_row_10 nt_row_id_46230">
-      <td>11</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Tự An</td>
-      <td>24148</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46231" class="BMT ninja_table_row_11 nt_row_id_46231">
-      <td>12</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Ea Tam</td>
-      <td>24151</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46232" class="BMT ninja_table_row_12 nt_row_id_46232">
-      <td>13</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Phường Khánh Xuân</td>
-      <td>24154</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46233" class="BMT ninja_table_row_13 nt_row_id_46233">
-      <td>14</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Hòa Thuận</td>
-      <td>24157</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46234" class="BMT ninja_table_row_14 nt_row_id_46234">
-      <td>15</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Cư ÊBur</td>
-      <td>24160</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46235" class="BMT ninja_table_row_15 nt_row_id_46235">
-      <td>16</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Ea Tu</td>
-      <td>24163</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46236" class="BMT ninja_table_row_16 nt_row_id_46236">
-      <td>17</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Hòa Thắng</td>
-      <td>24166</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46237" class="BMT ninja_table_row_17 nt_row_id_46237">
-      <td>18</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Ea Kao</td>
-      <td>24169</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46238" class="BMT ninja_table_row_18 nt_row_id_46238">
-      <td>19</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Hòa Phú</td>
-      <td>24172</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46239" class="BMT ninja_table_row_19 nt_row_id_46239">
-      <td>20</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Hòa Khánh</td>
-      <td>24175</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46240" class="BMT ninja_table_row_20 nt_row_id_46240">
-      <td>21</td>
-      <td>Thành phố Buôn Ma Thuột</td>
-      <td>643</td>
-      <td>Xã Hòa Xuân</td>
-      <td>24178</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46241" class="buonho ninja_table_row_21 nt_row_id_46241">
-      <td>22</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Phường An Lạc</td>
-      <td>24305</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46242" class="buonho ninja_table_row_22 nt_row_id_46242">
-      <td>23</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Phường An Bình</td>
-      <td>24308</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46243" class="buonho ninja_table_row_23 nt_row_id_46243">
-      <td>24</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Phường Thiện An</td>
-      <td>24311</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46244" class="buonho ninja_table_row_24 nt_row_id_46244">
-      <td>25</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Phường Đạt Hiếu</td>
-      <td>24318</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46245" class="buonho ninja_table_row_25 nt_row_id_46245">
-      <td>26</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Phường Đoàn Kết</td>
-      <td>24322</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46246" class="buonho ninja_table_row_26 nt_row_id_46246">
-      <td>27</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Xã Ea Blang</td>
-      <td>24325</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46247" class="buonho ninja_table_row_27 nt_row_id_46247">
-      <td>28</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Xã Ea Drông</td>
-      <td>24328</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46248" class="buonho ninja_table_row_28 nt_row_id_46248">
-      <td>29</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Phường Thống Nhất</td>
-      <td>24331</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46249" class="buonho ninja_table_row_29 nt_row_id_46249">
-      <td>30</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Phường Bình Tân</td>
-      <td>24332</td>
-      <td>Phường</td>
-    </tr>
-    <tr data-row_id="46250" class="buonho ninja_table_row_30 nt_row_id_46250">
-      <td>31</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Xã Ea Siên</td>
-      <td>24334</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46251" class="buonho ninja_table_row_31 nt_row_id_46251">
-      <td>32</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Xã Bình Thuận</td>
-      <td>24337</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46252" class="buonho ninja_table_row_32 nt_row_id_46252">
-      <td>33</td>
-      <td>Thị Xã Buôn Hồ</td>
-      <td>644</td>
-      <td>Xã Cư Bao</td>
-      <td>24340</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46253" class="eahleo ninja_table_row_33 nt_row_id_46253">
-      <td>34</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Thị trấn Ea Drăng</td>
-      <td>24181</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46254" class="eahleo ninja_table_row_34 nt_row_id_46254">
-      <td>35</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea H'leo</td>
-      <td>24184</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46255" class="eahleo ninja_table_row_35 nt_row_id_46255">
-      <td>36</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea Sol</td>
-      <td>24187</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46256" class="eahleo ninja_table_row_36 nt_row_id_46256">
-      <td>37</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea Ral</td>
-      <td>24190</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46257" class="eahleo ninja_table_row_37 nt_row_id_46257">
-      <td>38</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea Wy</td>
-      <td>24193</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46258" class="eahleo ninja_table_row_38 nt_row_id_46258">
-      <td>39</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Cư A Mung</td>
-      <td>24194</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46259" class="eahleo ninja_table_row_39 nt_row_id_46259">
-      <td>40</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Cư Mốt</td>
-      <td>24196</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46260" class="eahleo ninja_table_row_40 nt_row_id_46260">
-      <td>41</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea Hiao</td>
-      <td>24199</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46261" class="eahleo ninja_table_row_41 nt_row_id_46261">
-      <td>42</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea Khal</td>
-      <td>24202</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46262" class="eahleo ninja_table_row_42 nt_row_id_46262">
-      <td>43</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Dliê Yang</td>
-      <td>24205</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46263" class="eahleo ninja_table_row_43 nt_row_id_46263">
-      <td>44</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea Tir</td>
-      <td>24207</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46264" class="eahleo ninja_table_row_44 nt_row_id_46264">
-      <td>45</td>
-      <td>Huyện Ea H'leo</td>
-      <td>645</td>
-      <td>Xã Ea Nam</td>
-      <td>24208</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46265" class="easup ninja_table_row_45 nt_row_id_46265">
-      <td>46</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Thị trấn Ea Súp</td>
-      <td>24211</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46266" class="easup ninja_table_row_46 nt_row_id_46266">
-      <td>47</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Ia Lốp</td>
-      <td>24214</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46267" class="easup ninja_table_row_47 nt_row_id_46267">
-      <td>48</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Ia JLơi</td>
-      <td>24215</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46268" class="easup ninja_table_row_48 nt_row_id_46268">
-      <td>49</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Ea Rốk</td>
-      <td>24217</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46269" class="easup ninja_table_row_49 nt_row_id_46269">
-      <td>50</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Ya Tờ Mốt</td>
-      <td>24220</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46270" class="easup ninja_table_row_50 nt_row_id_46270">
-      <td>51</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Ia RVê</td>
-      <td>24221</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46271" class="easup ninja_table_row_51 nt_row_id_46271">
-      <td>52</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Ea Lê</td>
-      <td>24223</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46272" class="easup ninja_table_row_52 nt_row_id_46272">
-      <td>53</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Cư KBang</td>
-      <td>24226</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46273" class="easup ninja_table_row_53 nt_row_id_46273">
-      <td>54</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Ea Bung</td>
-      <td>24229</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46274" class="easup ninja_table_row_54 nt_row_id_46274">
-      <td>55</td>
-      <td>Huyện Ea Súp</td>
-      <td>646</td>
-      <td>Xã Cư M'Lan</td>
-      <td>24232</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46275" class="buondon ninja_table_row_55 nt_row_id_46275">
-      <td>56</td>
-      <td>Huyện Buôn Đôn</td>
-      <td>647</td>
-      <td>Xã Krông Na</td>
-      <td>24235</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46276" class="buondon ninja_table_row_56 nt_row_id_46276">
-      <td>57</td>
-      <td>Huyện Buôn Đôn</td>
-      <td>647</td>
-      <td>Xã Ea Huar</td>
-      <td>24238</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46277" class="buondon ninja_table_row_57 nt_row_id_46277">
-      <td>58</td>
-      <td>Huyện Buôn Đôn</td>
-      <td>647</td>
-      <td>Xã Ea Wer</td>
-      <td>24241</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46278" class="buondon ninja_table_row_58 nt_row_id_46278">
-      <td>59</td>
-      <td>Huyện Buôn Đôn</td>
-      <td>647</td>
-      <td>Xã Tân Hoà</td>
-      <td>24244</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46279" class="buondon ninja_table_row_59 nt_row_id_46279">
-      <td>60</td>
-      <td>Huyện Buôn Đôn</td>
-      <td>647</td>
-      <td>Xã Cuôr KNia</td>
-      <td>24247</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46280" class="buondon ninja_table_row_60 nt_row_id_46280">
-      <td>61</td>
-      <td>Huyện Buôn Đôn</td>
-      <td>647</td>
-      <td>Xã Ea Bar</td>
-      <td>24250</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46281" class="buondon ninja_table_row_61 nt_row_id_46281">
-      <td>62</td>
-      <td>Huyện Buôn Đôn</td>
-      <td>647</td>
-      <td>Xã Ea Nuôl</td>
-      <td>24253</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46282" class="cumnga ninja_table_row_62 nt_row_id_46282">
-      <td>63</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Thị trấn Ea Pốk</td>
-      <td>24256</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46283" class="cumnga ninja_table_row_63 nt_row_id_46283">
-      <td>64</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Thị trấn Quảng Phú</td>
-      <td>24259</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46284" class="cumnga ninja_table_row_64 nt_row_id_46284">
-      <td>65</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Quảng Tiến</td>
-      <td>24262</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46285" class="cumnga ninja_table_row_65 nt_row_id_46285">
-      <td>66</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea Kuêh</td>
-      <td>24264</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46286" class="cumnga ninja_table_row_66 nt_row_id_46286">
-      <td>67</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea Kiết</td>
-      <td>24265</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46287" class="cumnga ninja_table_row_67 nt_row_id_46287">
-      <td>68</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea Tar</td>
-      <td>24268</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46288" class="cumnga ninja_table_row_68 nt_row_id_46288">
-      <td>69</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Cư Dliê M'nông</td>
-      <td>24271</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46289" class="cumnga ninja_table_row_69 nt_row_id_46289">
-      <td>70</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea H'đinh</td>
-      <td>24274</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46290" class="cumnga ninja_table_row_70 nt_row_id_46290">
-      <td>71</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea Tul</td>
-      <td>24277</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46291" class="cumnga ninja_table_row_71 nt_row_id_46291">
-      <td>72</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea KPam</td>
-      <td>24280</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46292" class="cumnga ninja_table_row_72 nt_row_id_46292">
-      <td>73</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea M'DRóh</td>
-      <td>24283</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46293" class="cumnga ninja_table_row_73 nt_row_id_46293">
-      <td>74</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Quảng Hiệp</td>
-      <td>24286</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46294" class="cumnga ninja_table_row_74 nt_row_id_46294">
-      <td>75</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Cư M'gar</td>
-      <td>24289</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46295" class="cumnga ninja_table_row_75 nt_row_id_46295">
-      <td>76</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea D'Rơng</td>
-      <td>24292</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46296" class="cumnga ninja_table_row_76 nt_row_id_46296">
-      <td>77</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Ea M'nang</td>
-      <td>24295</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46297" class="cumnga ninja_table_row_77 nt_row_id_46297">
-      <td>78</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Cư Suê</td>
-      <td>24298</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46298" class="cumnga ninja_table_row_78 nt_row_id_46298">
-      <td>79</td>
-      <td>Huyện Cư M'gar</td>
-      <td>648</td>
-      <td>Xã Cuor Đăng</td>
-      <td>24301</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46299" class="krongbuk ninja_table_row_79 nt_row_id_46299">
-      <td>80</td>
-      <td>Huyện Krông Búk</td>
-      <td>649</td>
-      <td>Xã Cư Né</td>
-      <td>24307</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46300" class="krongbuk ninja_table_row_80 nt_row_id_46300">
-      <td>81</td>
-      <td>Huyện Krông Búk</td>
-      <td>649</td>
-      <td>Xã Chư KBô</td>
-      <td>24310</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46301" class="krongbuk ninja_table_row_81 nt_row_id_46301">
-      <td>82</td>
-      <td>Huyện Krông Búk</td>
-      <td>649</td>
-      <td>Xã Cư Pơng</td>
-      <td>24313</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46302" class="krongbuk ninja_table_row_82 nt_row_id_46302">
-      <td>83</td>
-      <td>Huyện Krông Búk</td>
-      <td>649</td>
-      <td>Xã Ea Sin</td>
-      <td>24314</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46303" class="krongbuk ninja_table_row_83 nt_row_id_46303">
-      <td>84</td>
-      <td>Huyện Krông Búk</td>
-      <td>649</td>
-      <td>Xã Pơng Drang</td>
-      <td>24316</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46304" class="krongbuk ninja_table_row_84 nt_row_id_46304">
-      <td>85</td>
-      <td>Huyện Krông Búk</td>
-      <td>649</td>
-      <td>Xã Tân Lập</td>
-      <td>24317</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46305" class="krongbuk ninja_table_row_85 nt_row_id_46305">
-      <td>86</td>
-      <td>Huyện Krông Búk</td>
-      <td>649</td>
-      <td>Xã Ea Ngai</td>
-      <td>24319</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46306" class="krongnang ninja_table_row_86 nt_row_id_46306">
-      <td>87</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Thị trấn Krông Năng</td>
-      <td>24343</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46307" class="krongnang ninja_table_row_87 nt_row_id_46307">
-      <td>88</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã ĐLiê Ya</td>
-      <td>24346</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46308" class="krongnang ninja_table_row_88 nt_row_id_46308">
-      <td>89</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Ea Tóh</td>
-      <td>24349</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46309" class="krongnang ninja_table_row_89 nt_row_id_46309">
-      <td>90</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Ea Tam</td>
-      <td>24352</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46310" class="krongnang ninja_table_row_90 nt_row_id_46310">
-      <td>91</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Phú Lộc</td>
-      <td>24355</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46311" class="krongnang ninja_table_row_91 nt_row_id_46311">
-      <td>92</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Tam Giang</td>
-      <td>24358</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46312" class="krongnang ninja_table_row_92 nt_row_id_46312">
-      <td>93</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Ea Puk</td>
-      <td>24359</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46313" class="krongnang ninja_table_row_93 nt_row_id_46313">
-      <td>94</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Ea Dăh</td>
-      <td>24360</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46314" class="krongnang ninja_table_row_94 nt_row_id_46314">
-      <td>95</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Ea Hồ</td>
-      <td>24361</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46315" class="krongnang ninja_table_row_95 nt_row_id_46315">
-      <td>96</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Phú Xuân</td>
-      <td>24364</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46316" class="krongnang ninja_table_row_96 nt_row_id_46316">
-      <td>97</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Cư Klông</td>
-      <td>24367</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46317" class="krongnang ninja_table_row_97 nt_row_id_46317">
-      <td>98</td>
-      <td>Huyện Krông Năng</td>
-      <td>650</td>
-      <td>Xã Ea Tân</td>
-      <td>24370</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46318" class="eakar ninja_table_row_98 nt_row_id_46318">
-      <td>99</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Thị trấn Ea Kar</td>
-      <td>24373</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46319" class="eakar ninja_table_row_99 nt_row_id_46319">
-      <td>100</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Thị trấn Ea Knốp</td>
-      <td>24376</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46320" class="eakar ninja_table_row_100 nt_row_id_46320">
-      <td>101</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Ea Sô</td>
-      <td>24379</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46321" class="eakar ninja_table_row_101 nt_row_id_46321">
-      <td>102</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Ea Sar</td>
-      <td>24380</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46322" class="eakar ninja_table_row_102 nt_row_id_46322">
-      <td>103</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Xuân Phú</td>
-      <td>24382</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46323" class="eakar ninja_table_row_103 nt_row_id_46323">
-      <td>104</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Cư Huê</td>
-      <td>24385</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46324" class="eakar ninja_table_row_104 nt_row_id_46324">
-      <td>105</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Ea Tih</td>
-      <td>24388</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46325" class="eakar ninja_table_row_105 nt_row_id_46325">
-      <td>106</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Ea Đar</td>
-      <td>24391</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46326" class="eakar ninja_table_row_106 nt_row_id_46326">
-      <td>107</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Ea Kmút</td>
-      <td>24394</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46327" class="eakar ninja_table_row_107 nt_row_id_46327">
-      <td>108</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Cư Ni</td>
-      <td>24397</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46328" class="eakar ninja_table_row_108 nt_row_id_46328">
-      <td>109</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Ea Păl</td>
-      <td>24400</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46329" class="eakar ninja_table_row_109 nt_row_id_46329">
-      <td>110</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Cư Prông</td>
-      <td>24401</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46330" class="eakar ninja_table_row_110 nt_row_id_46330">
-      <td>111</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Ea Ô</td>
-      <td>24403</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46331" class="eakar ninja_table_row_111 nt_row_id_46331">
-      <td>112</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Cư ELang</td>
-      <td>24404</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46332" class="eakar ninja_table_row_112 nt_row_id_46332">
-      <td>113</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Cư Bông</td>
-      <td>24406</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46333" class="eakar ninja_table_row_113 nt_row_id_46333">
-      <td>114</td>
-      <td>Huyện Ea Kar</td>
-      <td>651</td>
-      <td>Xã Cư Jang</td>
-      <td>24409</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46334" class="madrak ninja_table_row_114 nt_row_id_46334">
-      <td>115</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Thị trấn M'Đrắk</td>
-      <td>24412</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46335" class="madrak ninja_table_row_115 nt_row_id_46335">
-      <td>116</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Cư Prao</td>
-      <td>24415</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46336" class="madrak ninja_table_row_116 nt_row_id_46336">
-      <td>117</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Ea Pil</td>
-      <td>24418</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46337" class="madrak ninja_table_row_117 nt_row_id_46337">
-      <td>118</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Ea Lai</td>
-      <td>24421</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46338" class="madrak ninja_table_row_118 nt_row_id_46338">
-      <td>119</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Ea H'MLay</td>
-      <td>24424</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46339" class="madrak ninja_table_row_119 nt_row_id_46339">
-      <td>120</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Krông Jing</td>
-      <td>24427</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46340" class="madrak ninja_table_row_120 nt_row_id_46340">
-      <td>121</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Ea M' Doal</td>
-      <td>24430</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46341" class="madrak ninja_table_row_121 nt_row_id_46341">
-      <td>122</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Ea Riêng</td>
-      <td>24433</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46342" class="madrak ninja_table_row_122 nt_row_id_46342">
-      <td>123</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Cư M'ta</td>
-      <td>24436</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46343" class="madrak ninja_table_row_123 nt_row_id_46343">
-      <td>124</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Cư K Róa</td>
-      <td>24439</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46344" class="madrak ninja_table_row_124 nt_row_id_46344">
-      <td>125</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Krông Á</td>
-      <td>24442</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46345" class="madrak ninja_table_row_125 nt_row_id_46345">
-      <td>126</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Cư San</td>
-      <td>24444</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46346" class="madrak ninja_table_row_126 nt_row_id_46346">
-      <td>127</td>
-      <td>Huyện M'Đrắk</td>
-      <td>652</td>
-      <td>Xã Ea Trang</td>
-      <td>24445</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46347" class="krongbong ninja_table_row_127 nt_row_id_46347">
-      <td>128</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Thị trấn Krông Kmar</td>
-      <td>24448</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46348" class="krongbong ninja_table_row_128 nt_row_id_46348">
-      <td>129</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Dang Kang</td>
-      <td>24451</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46349" class="krongbong ninja_table_row_129 nt_row_id_46349">
-      <td>130</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Cư KTy</td>
-      <td>24454</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46350" class="krongbong ninja_table_row_130 nt_row_id_46350">
-      <td>131</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Hòa Thành</td>
-      <td>24457</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46351" class="krongbong ninja_table_row_131 nt_row_id_46351">
-      <td>132</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Hòa Tân</td>
-      <td>24460</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46352" class="krongbong ninja_table_row_132 nt_row_id_46352">
-      <td>133</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Hòa Phong</td>
-      <td>24463</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46353" class="krongbong ninja_table_row_133 nt_row_id_46353">
-      <td>134</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Hòa Lễ</td>
-      <td>24466</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46354" class="krongbong ninja_table_row_134 nt_row_id_46354">
-      <td>135</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Yang Reh</td>
-      <td>24469</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46355" class="krongbong ninja_table_row_135 nt_row_id_46355">
-      <td>136</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Ea Trul</td>
-      <td>24472</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46356" class="krongbong ninja_table_row_136 nt_row_id_46356">
-      <td>137</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Khuê Ngọc Điền</td>
-      <td>24475</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46357" class="krongbong ninja_table_row_137 nt_row_id_46357">
-      <td>138</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Cư Pui</td>
-      <td>24478</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46358" class="krongbong ninja_table_row_138 nt_row_id_46358">
-      <td>139</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Hòa Sơn</td>
-      <td>24481</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46359" class="krongbong ninja_table_row_139 nt_row_id_46359">
-      <td>140</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Cư Drăm</td>
-      <td>24484</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46360" class="krongbong ninja_table_row_140 nt_row_id_46360">
-      <td>141</td>
-      <td>Huyện Krông Bông</td>
-      <td>653</td>
-      <td>Xã Yang Mao</td>
-      <td>24487</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46361" class="krongpak ninja_table_row_141 nt_row_id_46361">
-      <td>142</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Thị trấn Phước An</td>
-      <td>24490</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46362" class="krongpak ninja_table_row_142 nt_row_id_46362">
-      <td>143</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã KRông Búk</td>
-      <td>24493</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46363" class="krongpak ninja_table_row_143 nt_row_id_46363">
-      <td>144</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Kly</td>
-      <td>24496</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46364" class="krongpak ninja_table_row_144 nt_row_id_46364">
-      <td>145</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Kênh</td>
-      <td>24499</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46365" class="krongpak ninja_table_row_145 nt_row_id_46365">
-      <td>146</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Phê</td>
-      <td>24502</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46366" class="krongpak ninja_table_row_146 nt_row_id_46366">
-      <td>147</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea KNuec</td>
-      <td>24505</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46367" class="krongpak ninja_table_row_147 nt_row_id_46367">
-      <td>148</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Yông</td>
-      <td>24508</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46368" class="krongpak ninja_table_row_148 nt_row_id_46368">
-      <td>149</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Hòa An</td>
-      <td>24511</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46369" class="krongpak ninja_table_row_149 nt_row_id_46369">
-      <td>150</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Kuăng</td>
-      <td>24514</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46370" class="krongpak ninja_table_row_150 nt_row_id_46370">
-      <td>151</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Hòa Đông</td>
-      <td>24517</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46371" class="krongpak ninja_table_row_151 nt_row_id_46371">
-      <td>152</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Hiu</td>
-      <td>24520</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46372" class="krongpak ninja_table_row_152 nt_row_id_46372">
-      <td>153</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Hòa Tiến</td>
-      <td>24523</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46373" class="krongpak ninja_table_row_153 nt_row_id_46373">
-      <td>154</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Tân Tiến</td>
-      <td>24526</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46374" class="krongpak ninja_table_row_154 nt_row_id_46374">
-      <td>155</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Vụ Bổn</td>
-      <td>24529</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46375" class="krongpak ninja_table_row_155 nt_row_id_46375">
-      <td>156</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Uy</td>
-      <td>24532</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46376" class="krongpak ninja_table_row_156 nt_row_id_46376">
-      <td>157</td>
-      <td>Huyện Krông Pắc</td>
-      <td>654</td>
-      <td>Xã Ea Yiêng</td>
-      <td>24535</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46377" class="krongana ninja_table_row_157 nt_row_id_46377">
-      <td>158</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Thị trấn Buôn Trấp</td>
-      <td>24538</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46378" class="krongana ninja_table_row_158 nt_row_id_46378">
-      <td>159</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Xã Dray Sáp</td>
-      <td>24556</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46379" class="krongana ninja_table_row_159 nt_row_id_46379">
-      <td>160</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Xã Ea Na</td>
-      <td>24559</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46380" class="krongana ninja_table_row_160 nt_row_id_46380">
-      <td>161</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Xã Ea Bông</td>
-      <td>24565</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46381" class="krongana ninja_table_row_161 nt_row_id_46381">
-      <td>162</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Xã Băng A Drênh</td>
-      <td>24568</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46382" class="krongana ninja_table_row_162 nt_row_id_46382">
-      <td>163</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Xã Dur KMăl</td>
-      <td>24571</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46383" class="krongana ninja_table_row_163 nt_row_id_46383">
-      <td>164</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Xã Bình Hòa</td>
-      <td>24574</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46384" class="krongana ninja_table_row_164 nt_row_id_46384">
-      <td>165</td>
-      <td>Huyện Krông A Na</td>
-      <td>655</td>
-      <td>Xã Quảng Điền</td>
-      <td>24577</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46385" class="lak ninja_table_row_165 nt_row_id_46385">
-      <td>166</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Thị trấn Liên Sơn</td>
-      <td>24580</td>
-      <td>Thị trấn</td>
-    </tr>
-    <tr data-row_id="46386" class="lak ninja_table_row_166 nt_row_id_46386">
-      <td>167</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Yang Tao</td>
-      <td>24583</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46387" class="lak ninja_table_row_167 nt_row_id_46387">
-      <td>168</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Bông Krang</td>
-      <td>24586</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46388" class="lak ninja_table_row_168 nt_row_id_46388">
-      <td>169</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Đắk Liêng</td>
-      <td>24589</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46389" class="lak ninja_table_row_169 nt_row_id_46389">
-      <td>170</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Buôn Triết</td>
-      <td>24592</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46390" class="lak ninja_table_row_170 nt_row_id_46390">
-      <td>171</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Buôn Tría</td>
-      <td>24595</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46391" class="lak ninja_table_row_171 nt_row_id_46391">
-      <td>172</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Đắk Phơi</td>
-      <td>24598</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46392" class="lak ninja_table_row_172 nt_row_id_46392">
-      <td>173</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Đắk Nuê</td>
-      <td>24601</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46393" class="lak ninja_table_row_173 nt_row_id_46393">
-      <td>174</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Krông Nô</td>
-      <td>24604</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46394" class="lak ninja_table_row_174 nt_row_id_46394">
-      <td>175</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Nam Ka</td>
-      <td>24607</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46395" class="lak ninja_table_row_175 nt_row_id_46395">
-      <td>176</td>
-      <td>Huyện Lắk</td>
-      <td>656</td>
-      <td>Xã Ea R'Bin</td>
-      <td>24610</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46396" class="kuin ninja_table_row_176 nt_row_id_46396">
-      <td>177</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Ea Ning</td>
-      <td>24540</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46397" class="kuin ninja_table_row_177 nt_row_id_46397">
-      <td>178</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Cư Ê Wi</td>
-      <td>24541</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46398" class="kuin ninja_table_row_178 nt_row_id_46398">
-      <td>179</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Ea Ktur</td>
-      <td>24544</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46399" class="kuin ninja_table_row_179 nt_row_id_46399">
-      <td>180</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Ea Tiêu</td>
-      <td>24547</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46400" class="kuin ninja_table_row_180 nt_row_id_46400">
-      <td>181</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Ea BHốk</td>
-      <td>24550</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46401" class="kuin ninja_table_row_181 nt_row_id_46401">
-      <td>182</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Ea Hu</td>
-      <td>24553</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46402" class="kuin ninja_table_row_182 nt_row_id_46402">
-      <td>183</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Dray Bhăng</td>
-      <td>24561</td>
-      <td>Xã</td>
-    </tr>
-    <tr data-row_id="46403" class="kuin ninja_table_row_183 nt_row_id_46403">
-      <td>184</td>
-      <td>Huyện Cư Kuin</td>
-      <td>657</td>
-      <td>Xã Hòa Hiệp</td>
-      <td>24562</td>
-      <td>Xã</td>
-    </tr>
-  </tbody><!--ninja_tobody_rendering_done-->
-</table>
+            <tr data-row_id="46220" class="BMT ninja_table_row_0 nt_row_id_46220">
+              <td>1</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Tân Lập</td>
+              <td>24118</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46221" class="BMT ninja_table_row_1 nt_row_id_46221">
+              <td>2</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Tân Hòa</td>
+              <td>24121</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46222" class="BMT ninja_table_row_2 nt_row_id_46222">
+              <td>3</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Tân An</td>
+              <td>24124</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46223" class="BMT ninja_table_row_3 nt_row_id_46223">
+              <td>4</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Thống Nhất</td>
+              <td>24127</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46224" class="BMT ninja_table_row_4 nt_row_id_46224">
+              <td>5</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Thành Nhất</td>
+              <td>24130</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46225" class="BMT ninja_table_row_5 nt_row_id_46225">
+              <td>6</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Thắng Lợi</td>
+              <td>24133</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46226" class="BMT ninja_table_row_6 nt_row_id_46226">
+              <td>7</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Tân Lợi</td>
+              <td>24136</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46227" class="BMT ninja_table_row_7 nt_row_id_46227">
+              <td>8</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Thành Công</td>
+              <td>24139</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46228" class="BMT ninja_table_row_8 nt_row_id_46228">
+              <td>9</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Tân Thành</td>
+              <td>24142</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46229" class="BMT ninja_table_row_9 nt_row_id_46229">
+              <td>10</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Tân Tiến</td>
+              <td>24145</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46230" class="BMT ninja_table_row_10 nt_row_id_46230">
+              <td>11</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Tự An</td>
+              <td>24148</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46231" class="BMT ninja_table_row_11 nt_row_id_46231">
+              <td>12</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Ea Tam</td>
+              <td>24151</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46232" class="BMT ninja_table_row_12 nt_row_id_46232">
+              <td>13</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Phường Khánh Xuân</td>
+              <td>24154</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46233" class="BMT ninja_table_row_13 nt_row_id_46233">
+              <td>14</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Hòa Thuận</td>
+              <td>24157</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46234" class="BMT ninja_table_row_14 nt_row_id_46234">
+              <td>15</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Cư ÊBur</td>
+              <td>24160</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46235" class="BMT ninja_table_row_15 nt_row_id_46235">
+              <td>16</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Ea Tu</td>
+              <td>24163</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46236" class="BMT ninja_table_row_16 nt_row_id_46236">
+              <td>17</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Hòa Thắng</td>
+              <td>24166</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46237" class="BMT ninja_table_row_17 nt_row_id_46237">
+              <td>18</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Ea Kao</td>
+              <td>24169</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46238" class="BMT ninja_table_row_18 nt_row_id_46238">
+              <td>19</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Hòa Phú</td>
+              <td>24172</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46239" class="BMT ninja_table_row_19 nt_row_id_46239">
+              <td>20</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Hòa Khánh</td>
+              <td>24175</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46240" class="BMT ninja_table_row_20 nt_row_id_46240">
+              <td>21</td>
+              <td>Thành phố Buôn Ma Thuột</td>
+              <td>643</td>
+              <td>Xã Hòa Xuân</td>
+              <td>24178</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46241" class="buonho ninja_table_row_21 nt_row_id_46241">
+              <td>22</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Phường An Lạc</td>
+              <td>24305</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46242" class="buonho ninja_table_row_22 nt_row_id_46242">
+              <td>23</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Phường An Bình</td>
+              <td>24308</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46243" class="buonho ninja_table_row_23 nt_row_id_46243">
+              <td>24</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Phường Thiện An</td>
+              <td>24311</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46244" class="buonho ninja_table_row_24 nt_row_id_46244">
+              <td>25</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Phường Đạt Hiếu</td>
+              <td>24318</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46245" class="buonho ninja_table_row_25 nt_row_id_46245">
+              <td>26</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Phường Đoàn Kết</td>
+              <td>24322</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46246" class="buonho ninja_table_row_26 nt_row_id_46246">
+              <td>27</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Xã Ea Blang</td>
+              <td>24325</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46247" class="buonho ninja_table_row_27 nt_row_id_46247">
+              <td>28</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Xã Ea Drông</td>
+              <td>24328</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46248" class="buonho ninja_table_row_28 nt_row_id_46248">
+              <td>29</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Phường Thống Nhất</td>
+              <td>24331</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46249" class="buonho ninja_table_row_29 nt_row_id_46249">
+              <td>30</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Phường Bình Tân</td>
+              <td>24332</td>
+              <td>Phường</td>
+            </tr>
+            <tr data-row_id="46250" class="buonho ninja_table_row_30 nt_row_id_46250">
+              <td>31</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Xã Ea Siên</td>
+              <td>24334</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46251" class="buonho ninja_table_row_31 nt_row_id_46251">
+              <td>32</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Xã Bình Thuận</td>
+              <td>24337</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46252" class="buonho ninja_table_row_32 nt_row_id_46252">
+              <td>33</td>
+              <td>Thị Xã Buôn Hồ</td>
+              <td>644</td>
+              <td>Xã Cư Bao</td>
+              <td>24340</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46253" class="eahleo ninja_table_row_33 nt_row_id_46253">
+              <td>34</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Thị trấn Ea Drăng</td>
+              <td>24181</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46254" class="eahleo ninja_table_row_34 nt_row_id_46254">
+              <td>35</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea H'leo</td>
+              <td>24184</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46255" class="eahleo ninja_table_row_35 nt_row_id_46255">
+              <td>36</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea Sol</td>
+              <td>24187</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46256" class="eahleo ninja_table_row_36 nt_row_id_46256">
+              <td>37</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea Ral</td>
+              <td>24190</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46257" class="eahleo ninja_table_row_37 nt_row_id_46257">
+              <td>38</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea Wy</td>
+              <td>24193</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46258" class="eahleo ninja_table_row_38 nt_row_id_46258">
+              <td>39</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Cư A Mung</td>
+              <td>24194</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46259" class="eahleo ninja_table_row_39 nt_row_id_46259">
+              <td>40</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Cư Mốt</td>
+              <td>24196</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46260" class="eahleo ninja_table_row_40 nt_row_id_46260">
+              <td>41</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea Hiao</td>
+              <td>24199</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46261" class="eahleo ninja_table_row_41 nt_row_id_46261">
+              <td>42</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea Khal</td>
+              <td>24202</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46262" class="eahleo ninja_table_row_42 nt_row_id_46262">
+              <td>43</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Dliê Yang</td>
+              <td>24205</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46263" class="eahleo ninja_table_row_43 nt_row_id_46263">
+              <td>44</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea Tir</td>
+              <td>24207</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46264" class="eahleo ninja_table_row_44 nt_row_id_46264">
+              <td>45</td>
+              <td>Huyện Ea H'leo</td>
+              <td>645</td>
+              <td>Xã Ea Nam</td>
+              <td>24208</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46265" class="easup ninja_table_row_45 nt_row_id_46265">
+              <td>46</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Thị trấn Ea Súp</td>
+              <td>24211</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46266" class="easup ninja_table_row_46 nt_row_id_46266">
+              <td>47</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Ia Lốp</td>
+              <td>24214</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46267" class="easup ninja_table_row_47 nt_row_id_46267">
+              <td>48</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Ia JLơi</td>
+              <td>24215</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46268" class="easup ninja_table_row_48 nt_row_id_46268">
+              <td>49</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Ea Rốk</td>
+              <td>24217</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46269" class="easup ninja_table_row_49 nt_row_id_46269">
+              <td>50</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Ya Tờ Mốt</td>
+              <td>24220</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46270" class="easup ninja_table_row_50 nt_row_id_46270">
+              <td>51</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Ia RVê</td>
+              <td>24221</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46271" class="easup ninja_table_row_51 nt_row_id_46271">
+              <td>52</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Ea Lê</td>
+              <td>24223</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46272" class="easup ninja_table_row_52 nt_row_id_46272">
+              <td>53</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Cư KBang</td>
+              <td>24226</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46273" class="easup ninja_table_row_53 nt_row_id_46273">
+              <td>54</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Ea Bung</td>
+              <td>24229</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46274" class="easup ninja_table_row_54 nt_row_id_46274">
+              <td>55</td>
+              <td>Huyện Ea Súp</td>
+              <td>646</td>
+              <td>Xã Cư M'Lan</td>
+              <td>24232</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46275" class="buondon ninja_table_row_55 nt_row_id_46275">
+              <td>56</td>
+              <td>Huyện Buôn Đôn</td>
+              <td>647</td>
+              <td>Xã Krông Na</td>
+              <td>24235</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46276" class="buondon ninja_table_row_56 nt_row_id_46276">
+              <td>57</td>
+              <td>Huyện Buôn Đôn</td>
+              <td>647</td>
+              <td>Xã Ea Huar</td>
+              <td>24238</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46277" class="buondon ninja_table_row_57 nt_row_id_46277">
+              <td>58</td>
+              <td>Huyện Buôn Đôn</td>
+              <td>647</td>
+              <td>Xã Ea Wer</td>
+              <td>24241</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46278" class="buondon ninja_table_row_58 nt_row_id_46278">
+              <td>59</td>
+              <td>Huyện Buôn Đôn</td>
+              <td>647</td>
+              <td>Xã Tân Hoà</td>
+              <td>24244</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46279" class="buondon ninja_table_row_59 nt_row_id_46279">
+              <td>60</td>
+              <td>Huyện Buôn Đôn</td>
+              <td>647</td>
+              <td>Xã Cuôr KNia</td>
+              <td>24247</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46280" class="buondon ninja_table_row_60 nt_row_id_46280">
+              <td>61</td>
+              <td>Huyện Buôn Đôn</td>
+              <td>647</td>
+              <td>Xã Ea Bar</td>
+              <td>24250</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46281" class="buondon ninja_table_row_61 nt_row_id_46281">
+              <td>62</td>
+              <td>Huyện Buôn Đôn</td>
+              <td>647</td>
+              <td>Xã Ea Nuôl</td>
+              <td>24253</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46282" class="cumnga ninja_table_row_62 nt_row_id_46282">
+              <td>63</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Thị trấn Ea Pốk</td>
+              <td>24256</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46283" class="cumnga ninja_table_row_63 nt_row_id_46283">
+              <td>64</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Thị trấn Quảng Phú</td>
+              <td>24259</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46284" class="cumnga ninja_table_row_64 nt_row_id_46284">
+              <td>65</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Quảng Tiến</td>
+              <td>24262</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46285" class="cumnga ninja_table_row_65 nt_row_id_46285">
+              <td>66</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea Kuêh</td>
+              <td>24264</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46286" class="cumnga ninja_table_row_66 nt_row_id_46286">
+              <td>67</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea Kiết</td>
+              <td>24265</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46287" class="cumnga ninja_table_row_67 nt_row_id_46287">
+              <td>68</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea Tar</td>
+              <td>24268</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46288" class="cumnga ninja_table_row_68 nt_row_id_46288">
+              <td>69</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Cư Dliê M'nông</td>
+              <td>24271</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46289" class="cumnga ninja_table_row_69 nt_row_id_46289">
+              <td>70</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea H'đinh</td>
+              <td>24274</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46290" class="cumnga ninja_table_row_70 nt_row_id_46290">
+              <td>71</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea Tul</td>
+              <td>24277</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46291" class="cumnga ninja_table_row_71 nt_row_id_46291">
+              <td>72</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea KPam</td>
+              <td>24280</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46292" class="cumnga ninja_table_row_72 nt_row_id_46292">
+              <td>73</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea M'DRóh</td>
+              <td>24283</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46293" class="cumnga ninja_table_row_73 nt_row_id_46293">
+              <td>74</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Quảng Hiệp</td>
+              <td>24286</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46294" class="cumnga ninja_table_row_74 nt_row_id_46294">
+              <td>75</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Cư M'gar</td>
+              <td>24289</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46295" class="cumnga ninja_table_row_75 nt_row_id_46295">
+              <td>76</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea D'Rơng</td>
+              <td>24292</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46296" class="cumnga ninja_table_row_76 nt_row_id_46296">
+              <td>77</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Ea M'nang</td>
+              <td>24295</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46297" class="cumnga ninja_table_row_77 nt_row_id_46297">
+              <td>78</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Cư Suê</td>
+              <td>24298</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46298" class="cumnga ninja_table_row_78 nt_row_id_46298">
+              <td>79</td>
+              <td>Huyện Cư M'gar</td>
+              <td>648</td>
+              <td>Xã Cuor Đăng</td>
+              <td>24301</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46299" class="krongbuk ninja_table_row_79 nt_row_id_46299">
+              <td>80</td>
+              <td>Huyện Krông Búk</td>
+              <td>649</td>
+              <td>Xã Cư Né</td>
+              <td>24307</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46300" class="krongbuk ninja_table_row_80 nt_row_id_46300">
+              <td>81</td>
+              <td>Huyện Krông Búk</td>
+              <td>649</td>
+              <td>Xã Chư KBô</td>
+              <td>24310</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46301" class="krongbuk ninja_table_row_81 nt_row_id_46301">
+              <td>82</td>
+              <td>Huyện Krông Búk</td>
+              <td>649</td>
+              <td>Xã Cư Pơng</td>
+              <td>24313</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46302" class="krongbuk ninja_table_row_82 nt_row_id_46302">
+              <td>83</td>
+              <td>Huyện Krông Búk</td>
+              <td>649</td>
+              <td>Xã Ea Sin</td>
+              <td>24314</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46303" class="krongbuk ninja_table_row_83 nt_row_id_46303">
+              <td>84</td>
+              <td>Huyện Krông Búk</td>
+              <td>649</td>
+              <td>Xã Pơng Drang</td>
+              <td>24316</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46304" class="krongbuk ninja_table_row_84 nt_row_id_46304">
+              <td>85</td>
+              <td>Huyện Krông Búk</td>
+              <td>649</td>
+              <td>Xã Tân Lập</td>
+              <td>24317</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46305" class="krongbuk ninja_table_row_85 nt_row_id_46305">
+              <td>86</td>
+              <td>Huyện Krông Búk</td>
+              <td>649</td>
+              <td>Xã Ea Ngai</td>
+              <td>24319</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46306" class="krongnang ninja_table_row_86 nt_row_id_46306">
+              <td>87</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Thị trấn Krông Năng</td>
+              <td>24343</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46307" class="krongnang ninja_table_row_87 nt_row_id_46307">
+              <td>88</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã ĐLiê Ya</td>
+              <td>24346</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46308" class="krongnang ninja_table_row_88 nt_row_id_46308">
+              <td>89</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Ea Tóh</td>
+              <td>24349</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46309" class="krongnang ninja_table_row_89 nt_row_id_46309">
+              <td>90</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Ea Tam</td>
+              <td>24352</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46310" class="krongnang ninja_table_row_90 nt_row_id_46310">
+              <td>91</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Phú Lộc</td>
+              <td>24355</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46311" class="krongnang ninja_table_row_91 nt_row_id_46311">
+              <td>92</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Tam Giang</td>
+              <td>24358</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46312" class="krongnang ninja_table_row_92 nt_row_id_46312">
+              <td>93</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Ea Puk</td>
+              <td>24359</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46313" class="krongnang ninja_table_row_93 nt_row_id_46313">
+              <td>94</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Ea Dăh</td>
+              <td>24360</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46314" class="krongnang ninja_table_row_94 nt_row_id_46314">
+              <td>95</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Ea Hồ</td>
+              <td>24361</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46315" class="krongnang ninja_table_row_95 nt_row_id_46315">
+              <td>96</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Phú Xuân</td>
+              <td>24364</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46316" class="krongnang ninja_table_row_96 nt_row_id_46316">
+              <td>97</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Cư Klông</td>
+              <td>24367</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46317" class="krongnang ninja_table_row_97 nt_row_id_46317">
+              <td>98</td>
+              <td>Huyện Krông Năng</td>
+              <td>650</td>
+              <td>Xã Ea Tân</td>
+              <td>24370</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46318" class="eakar ninja_table_row_98 nt_row_id_46318">
+              <td>99</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Thị trấn Ea Kar</td>
+              <td>24373</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46319" class="eakar ninja_table_row_99 nt_row_id_46319">
+              <td>100</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Thị trấn Ea Knốp</td>
+              <td>24376</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46320" class="eakar ninja_table_row_100 nt_row_id_46320">
+              <td>101</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Ea Sô</td>
+              <td>24379</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46321" class="eakar ninja_table_row_101 nt_row_id_46321">
+              <td>102</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Ea Sar</td>
+              <td>24380</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46322" class="eakar ninja_table_row_102 nt_row_id_46322">
+              <td>103</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Xuân Phú</td>
+              <td>24382</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46323" class="eakar ninja_table_row_103 nt_row_id_46323">
+              <td>104</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Cư Huê</td>
+              <td>24385</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46324" class="eakar ninja_table_row_104 nt_row_id_46324">
+              <td>105</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Ea Tih</td>
+              <td>24388</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46325" class="eakar ninja_table_row_105 nt_row_id_46325">
+              <td>106</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Ea Đar</td>
+              <td>24391</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46326" class="eakar ninja_table_row_106 nt_row_id_46326">
+              <td>107</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Ea Kmút</td>
+              <td>24394</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46327" class="eakar ninja_table_row_107 nt_row_id_46327">
+              <td>108</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Cư Ni</td>
+              <td>24397</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46328" class="eakar ninja_table_row_108 nt_row_id_46328">
+              <td>109</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Ea Păl</td>
+              <td>24400</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46329" class="eakar ninja_table_row_109 nt_row_id_46329">
+              <td>110</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Cư Prông</td>
+              <td>24401</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46330" class="eakar ninja_table_row_110 nt_row_id_46330">
+              <td>111</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Ea Ô</td>
+              <td>24403</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46331" class="eakar ninja_table_row_111 nt_row_id_46331">
+              <td>112</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Cư ELang</td>
+              <td>24404</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46332" class="eakar ninja_table_row_112 nt_row_id_46332">
+              <td>113</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Cư Bông</td>
+              <td>24406</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46333" class="eakar ninja_table_row_113 nt_row_id_46333">
+              <td>114</td>
+              <td>Huyện Ea Kar</td>
+              <td>651</td>
+              <td>Xã Cư Jang</td>
+              <td>24409</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46334" class="madrak ninja_table_row_114 nt_row_id_46334">
+              <td>115</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Thị trấn M'Đrắk</td>
+              <td>24412</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46335" class="madrak ninja_table_row_115 nt_row_id_46335">
+              <td>116</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Cư Prao</td>
+              <td>24415</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46336" class="madrak ninja_table_row_116 nt_row_id_46336">
+              <td>117</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Ea Pil</td>
+              <td>24418</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46337" class="madrak ninja_table_row_117 nt_row_id_46337">
+              <td>118</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Ea Lai</td>
+              <td>24421</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46338" class="madrak ninja_table_row_118 nt_row_id_46338">
+              <td>119</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Ea H'MLay</td>
+              <td>24424</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46339" class="madrak ninja_table_row_119 nt_row_id_46339">
+              <td>120</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Krông Jing</td>
+              <td>24427</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46340" class="madrak ninja_table_row_120 nt_row_id_46340">
+              <td>121</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Ea M' Doal</td>
+              <td>24430</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46341" class="madrak ninja_table_row_121 nt_row_id_46341">
+              <td>122</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Ea Riêng</td>
+              <td>24433</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46342" class="madrak ninja_table_row_122 nt_row_id_46342">
+              <td>123</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Cư M'ta</td>
+              <td>24436</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46343" class="madrak ninja_table_row_123 nt_row_id_46343">
+              <td>124</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Cư K Róa</td>
+              <td>24439</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46344" class="madrak ninja_table_row_124 nt_row_id_46344">
+              <td>125</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Krông Á</td>
+              <td>24442</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46345" class="madrak ninja_table_row_125 nt_row_id_46345">
+              <td>126</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Cư San</td>
+              <td>24444</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46346" class="madrak ninja_table_row_126 nt_row_id_46346">
+              <td>127</td>
+              <td>Huyện M'Đrắk</td>
+              <td>652</td>
+              <td>Xã Ea Trang</td>
+              <td>24445</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46347" class="krongbong ninja_table_row_127 nt_row_id_46347">
+              <td>128</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Thị trấn Krông Kmar</td>
+              <td>24448</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46348" class="krongbong ninja_table_row_128 nt_row_id_46348">
+              <td>129</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Dang Kang</td>
+              <td>24451</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46349" class="krongbong ninja_table_row_129 nt_row_id_46349">
+              <td>130</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Cư KTy</td>
+              <td>24454</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46350" class="krongbong ninja_table_row_130 nt_row_id_46350">
+              <td>131</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Hòa Thành</td>
+              <td>24457</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46351" class="krongbong ninja_table_row_131 nt_row_id_46351">
+              <td>132</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Hòa Tân</td>
+              <td>24460</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46352" class="krongbong ninja_table_row_132 nt_row_id_46352">
+              <td>133</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Hòa Phong</td>
+              <td>24463</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46353" class="krongbong ninja_table_row_133 nt_row_id_46353">
+              <td>134</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Hòa Lễ</td>
+              <td>24466</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46354" class="krongbong ninja_table_row_134 nt_row_id_46354">
+              <td>135</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Yang Reh</td>
+              <td>24469</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46355" class="krongbong ninja_table_row_135 nt_row_id_46355">
+              <td>136</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Ea Trul</td>
+              <td>24472</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46356" class="krongbong ninja_table_row_136 nt_row_id_46356">
+              <td>137</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Khuê Ngọc Điền</td>
+              <td>24475</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46357" class="krongbong ninja_table_row_137 nt_row_id_46357">
+              <td>138</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Cư Pui</td>
+              <td>24478</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46358" class="krongbong ninja_table_row_138 nt_row_id_46358">
+              <td>139</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Hòa Sơn</td>
+              <td>24481</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46359" class="krongbong ninja_table_row_139 nt_row_id_46359">
+              <td>140</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Cư Drăm</td>
+              <td>24484</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46360" class="krongbong ninja_table_row_140 nt_row_id_46360">
+              <td>141</td>
+              <td>Huyện Krông Bông</td>
+              <td>653</td>
+              <td>Xã Yang Mao</td>
+              <td>24487</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46361" class="krongpak ninja_table_row_141 nt_row_id_46361">
+              <td>142</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Thị trấn Phước An</td>
+              <td>24490</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46362" class="krongpak ninja_table_row_142 nt_row_id_46362">
+              <td>143</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã KRông Búk</td>
+              <td>24493</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46363" class="krongpak ninja_table_row_143 nt_row_id_46363">
+              <td>144</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Kly</td>
+              <td>24496</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46364" class="krongpak ninja_table_row_144 nt_row_id_46364">
+              <td>145</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Kênh</td>
+              <td>24499</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46365" class="krongpak ninja_table_row_145 nt_row_id_46365">
+              <td>146</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Phê</td>
+              <td>24502</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46366" class="krongpak ninja_table_row_146 nt_row_id_46366">
+              <td>147</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea KNuec</td>
+              <td>24505</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46367" class="krongpak ninja_table_row_147 nt_row_id_46367">
+              <td>148</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Yông</td>
+              <td>24508</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46368" class="krongpak ninja_table_row_148 nt_row_id_46368">
+              <td>149</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Hòa An</td>
+              <td>24511</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46369" class="krongpak ninja_table_row_149 nt_row_id_46369">
+              <td>150</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Kuăng</td>
+              <td>24514</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46370" class="krongpak ninja_table_row_150 nt_row_id_46370">
+              <td>151</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Hòa Đông</td>
+              <td>24517</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46371" class="krongpak ninja_table_row_151 nt_row_id_46371">
+              <td>152</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Hiu</td>
+              <td>24520</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46372" class="krongpak ninja_table_row_152 nt_row_id_46372">
+              <td>153</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Hòa Tiến</td>
+              <td>24523</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46373" class="krongpak ninja_table_row_153 nt_row_id_46373">
+              <td>154</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Tân Tiến</td>
+              <td>24526</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46374" class="krongpak ninja_table_row_154 nt_row_id_46374">
+              <td>155</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Vụ Bổn</td>
+              <td>24529</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46375" class="krongpak ninja_table_row_155 nt_row_id_46375">
+              <td>156</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Uy</td>
+              <td>24532</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46376" class="krongpak ninja_table_row_156 nt_row_id_46376">
+              <td>157</td>
+              <td>Huyện Krông Pắc</td>
+              <td>654</td>
+              <td>Xã Ea Yiêng</td>
+              <td>24535</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46377" class="krongana ninja_table_row_157 nt_row_id_46377">
+              <td>158</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Thị trấn Buôn Trấp</td>
+              <td>24538</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46378" class="krongana ninja_table_row_158 nt_row_id_46378">
+              <td>159</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Xã Dray Sáp</td>
+              <td>24556</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46379" class="krongana ninja_table_row_159 nt_row_id_46379">
+              <td>160</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Xã Ea Na</td>
+              <td>24559</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46380" class="krongana ninja_table_row_160 nt_row_id_46380">
+              <td>161</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Xã Ea Bông</td>
+              <td>24565</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46381" class="krongana ninja_table_row_161 nt_row_id_46381">
+              <td>162</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Xã Băng A Drênh</td>
+              <td>24568</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46382" class="krongana ninja_table_row_162 nt_row_id_46382">
+              <td>163</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Xã Dur KMăl</td>
+              <td>24571</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46383" class="krongana ninja_table_row_163 nt_row_id_46383">
+              <td>164</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Xã Bình Hòa</td>
+              <td>24574</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46384" class="krongana ninja_table_row_164 nt_row_id_46384">
+              <td>165</td>
+              <td>Huyện Krông A Na</td>
+              <td>655</td>
+              <td>Xã Quảng Điền</td>
+              <td>24577</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46385" class="lak ninja_table_row_165 nt_row_id_46385">
+              <td>166</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Thị trấn Liên Sơn</td>
+              <td>24580</td>
+              <td>Thị trấn</td>
+            </tr>
+            <tr data-row_id="46386" class="lak ninja_table_row_166 nt_row_id_46386">
+              <td>167</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Yang Tao</td>
+              <td>24583</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46387" class="lak ninja_table_row_167 nt_row_id_46387">
+              <td>168</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Bông Krang</td>
+              <td>24586</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46388" class="lak ninja_table_row_168 nt_row_id_46388">
+              <td>169</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Đắk Liêng</td>
+              <td>24589</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46389" class="lak ninja_table_row_169 nt_row_id_46389">
+              <td>170</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Buôn Triết</td>
+              <td>24592</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46390" class="lak ninja_table_row_170 nt_row_id_46390">
+              <td>171</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Buôn Tría</td>
+              <td>24595</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46391" class="lak ninja_table_row_171 nt_row_id_46391">
+              <td>172</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Đắk Phơi</td>
+              <td>24598</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46392" class="lak ninja_table_row_172 nt_row_id_46392">
+              <td>173</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Đắk Nuê</td>
+              <td>24601</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46393" class="lak ninja_table_row_173 nt_row_id_46393">
+              <td>174</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Krông Nô</td>
+              <td>24604</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46394" class="lak ninja_table_row_174 nt_row_id_46394">
+              <td>175</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Nam Ka</td>
+              <td>24607</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46395" class="lak ninja_table_row_175 nt_row_id_46395">
+              <td>176</td>
+              <td>Huyện Lắk</td>
+              <td>656</td>
+              <td>Xã Ea R'Bin</td>
+              <td>24610</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46396" class="kuin ninja_table_row_176 nt_row_id_46396">
+              <td>177</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Ea Ning</td>
+              <td>24540</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46397" class="kuin ninja_table_row_177 nt_row_id_46397">
+              <td>178</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Cư Ê Wi</td>
+              <td>24541</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46398" class="kuin ninja_table_row_178 nt_row_id_46398">
+              <td>179</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Ea Ktur</td>
+              <td>24544</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46399" class="kuin ninja_table_row_179 nt_row_id_46399">
+              <td>180</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Ea Tiêu</td>
+              <td>24547</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46400" class="kuin ninja_table_row_180 nt_row_id_46400">
+              <td>181</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Ea BHốk</td>
+              <td>24550</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46401" class="kuin ninja_table_row_181 nt_row_id_46401">
+              <td>182</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Ea Hu</td>
+              <td>24553</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46402" class="kuin ninja_table_row_182 nt_row_id_46402">
+              <td>183</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Dray Bhăng</td>
+              <td>24561</td>
+              <td>Xã</td>
+            </tr>
+            <tr data-row_id="46403" class="kuin ninja_table_row_183 nt_row_id_46403">
+              <td>184</td>
+              <td>Huyện Cư Kuin</td>
+              <td>657</td>
+              <td>Xã Hòa Hiệp</td>
+              <td>24562</td>
+              <td>Xã</td>
+            </tr>
+          </tbody><!--ninja_tobody_rendering_done-->
+          </table>
 
-  </div>
-  <div class="home__img">
-    <img src="img/hanhchinhDL.png" class="home__img_list" />
-  </div>
-</div>
+        </div>
+        <figure class="figure col-4">
+          <img src="img/hanhchinhDL.png" class="float" style="width: 100%; margin-top: 150px;" >
+        </figure>
+      </div>
   </div>
 </body>
 </html>
